@@ -1,0 +1,18 @@
+user 
+	- create
+	- update
+	- getById
+	- GetAll
+	- validate
+	
+Project
+	- Create
+		- id, description, createdby(userdId) status(created, operational, completed), createdon, updateon
+	- Assignment
+		- id, pid, userid, type(PROJECT, TASK), status(assigned), createdon, updatedon
+		- 
+	- assignmentAction
+		- Project - id, assignementId, status(accepted, rejected), startedon, completedon
+		- Task - id, assignementId, status(accepted, rejected, started, completed), startedon, completedon, timeline
+		{ actionType="project"/"task" }
+			
